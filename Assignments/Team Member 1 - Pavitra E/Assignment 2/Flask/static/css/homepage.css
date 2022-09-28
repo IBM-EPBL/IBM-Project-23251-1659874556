@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/Banner.jpg");
+  background-size: cover;
+  height: 600px;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.company-name {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-left: 5%;
+  font-weight: 700;
+  font-size: 36px !important;
+  color: #eea47fff !important;
+}
+
+.company-name:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.15, 1.15);
+}
+
+.header-content {
+  font-family: "Roboto", sans-serif;
+  color: bisque;
+  display: flex;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+.header-subcontent {
+  font-family: "Noto Sans JP", sans-serif;
+  color: white;
+  margin-left: 20%;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+
+.button {
+  background-color: #00539cff !important;
+  outline-style: none;
+  border: #00539cff;
+  height: 40px;
+  width: 120px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.button:hover {
+  outline-style: none;
+  border: none;
+  background-color: #eea47fff !important;
+  color: black !important;
+}
+
+.header-button {
+  margin-left: 20%;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+
+.about-header,
+.project-header,
+.pricing-header,
+.team-header,
+.life-header,
+.newsletter-header,
+.blog-header,
+.contact-header {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.about-content {
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: left;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.about-us-image {
+  height: 180px;
+  width: 470px;
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.about-us-image:hover {
+  transform: scale(1.08);
+}
+.about-us-icons {
+  color: #00539cff !important;
+}
+
+.icon-heading {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  color: #ff9966;
+}
+
+.content {
+  text-align: left;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+}
+
+.alignment {
+  display: flex;
+  justify-content: center;
+}
+
+h5 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image {
+  height: 300px;
+}
+
+.card-title {
+  font-family: "Crete Round", serif;
+  color: #ff9966;
+  font-weight: 800;
+}
+
+.card-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.project-card {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.project-card .card-body:hover {
+  background-color: #dbd4b4;
+}
+
+.vertical-line {
+  border-right: 1px solid gray;
+  height: 380px;
+}
+.pricing-plan {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  color: #ff9966;
+}
+
+.pricing-amount {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  background-color: gray;
+}
+
+.video-project-header {
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.team-alignment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-images {
+  height: 200px;
+  width: 350px;
+  border-radius: 15px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.team-images:hover {
+  transform: scale(1.09);
+}
+
+.life-background {
+  background-color: bisque;
+}
+
+.life-content {
+  display: flex;
+  justify-content: center;
+}
+
+.life-image {
+  height: 320px;
+  width: 600px;
+  margin-top: 10px;
+}
+
+.life-header {
+  padding: 20px;
+}
+
+.newsletter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./ImageCollections/signup.jpg");
+  background-size: cover;
+  height: 300px;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.newsletter-header {
+  padding: 20px;
+  color: white;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-btn {
+  background-color: #eea47fff !important;
+  color: black;
+  width: 100px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 900 !important;
+}
+
+.blog-type {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  color: black;
+}
+
+.blog-date {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.blog-content {
+  text-align: left;
+  font-weight: 500;
+}
+
+.blog-image {
+  height: 200px;
+  width: 200px;
+}
+
+.contact-background {
+  height: 500px;
+  background-color: #eea47fff;
+}
+
+.member-name {
+  font-family: "Crete Round", serif;
+  font-weight: 500;
+}
+
+.member-position {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.contact-labels {
+  font-family: "Crete Round", serif;
+  font-weight: 500;
+}
+
+.send-button {
+  background-color: #00539cff !important;
+  color: white !important;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.footer-headings {
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.address {
+  color: #eea47fff;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  color: gray !important;
+}
+
+.footer-icons a {
+  color: gray !important;
+}
+.footer-icons :hover {
+  color: #eea47fff;
+}
+
+.details {
+  color: #eea47fff !important;
+}

@@ -1,0 +1,71 @@
+{% extends 'base.html' %} {% block head %}
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+<link rel="stylesheet" href="static/css/about.css" />
+<title>About Page</title>
+{% endblock %} {% block body %}
+<div class="about">
+  <h2 class="about-header mt-5 text-center">About Us</h2>
+  <div class="row mt-5 mb-5">
+    <div class="about-content col-lg-6 alignment">
+      <p class="ml-5 mr-5">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, natus
+        vitae autem nam reiciendis consequuntur, doloremque repellat nulla
+        dolorum at amet Aliquam repellendus nostrum alias error aperiam esse
+        assumenda et! Esse ullam asperiores odit dolorem animi dignissimos
+        dicta, neque culpa sit inventore reiciendis nisi distinctio repellendus
+        labore veniam
+      </p>
+    </div>
+    <div class="col-lg-6 about-image text-center">
+      <img src="static/images/about.jpg" alt="about" class="about-us-image" />
+    </div>
+  </div>
+</div>
+
+<div class="about-us">
+  <div class="row d-flex text-center alignment">
+    <div class="col-lg-3 about-us-icons mt-4">
+      <i class="fa fa-bell fa-3x mb-4" aria-hidden="true"></i>
+      <h5 class="icon-heading">LOREM IPSUM</h5>
+      <p class="content mt-3 text-muted ml-3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+        consectetur eum, veniam repellendus cumque quod voluptatem accusantium
+        rem, recusandae minus dolorem sequi. Similique mollitia, nam libero
+        ducimus maiores tenetur possimus
+      </p>
+      <button type="button" class="btn button text-white mt-3 mb-5">
+        Learn more
+      </button>
+    </div>
+    <div class="col-lg-3 about-us-icons mt-4">
+      <i class="fa fa-envelope fa-3x mb-4" aria-hidden="true"></i>
+      <h5 class="icon-heading">DOLOR SIT</h5>
+      <p class="content mt-3 text-muted ml-3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+        consectetur eum, veniam repellendus cumque quod voluptatem accusantium
+        rem, recusandae minus dolorem sequi. Similique mollitia, nam libero
+        ducimus maiores tenetur possimus
+      </p>
+      <button type="button" class="btn button text-white mt-3 mb-5">
+        Learn more
+      </button>
+    </div>
+    <div class="col-lg-3 about-us-icons mt-4">
+      <i class="fa fa-building fa-3x mb-4" aria-hidden="true"></i>
+      <h5 class="icon-heading">CONSECTETURE</h5>
+      <p class="content mt-3 text-muted ml-3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+        consectetur eum, veniam repellendus cumque quod voluptatem accusantium
+        rem, recusandae minus dolorem sequi. Similique mollitia, nam libero
+        ducimus maiores tenetur possimus
+      </p>
+      <button type="button" class="btn button text-white mt-3 mb-5">
+        Learn more
+      </button>
+    </div>
+  </div>
+</div>
+{% endblock %}
