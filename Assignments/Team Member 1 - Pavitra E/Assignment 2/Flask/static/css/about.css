@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+
+.about-header,
+.project-header,
+.pricing-header,
+.team-header,
+.life-header,
+.newsletter-header,
+.blog-header,
+.contact-header {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.about-content {
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: left;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  color: black;
+}
+
+.about-us-image {
+  height: 180px;
+  width: 470px;
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.about-us-image:hover {
+  transform: scale(1.08);
+}
+.about-us-icons {
+  color: #00539cff !important;
+}
+
+.icon-heading {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  color: #ff9966;
+}
+
+.content {
+  text-align: left;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+}
+
+.alignment {
+  display: flex;
+  justify-content: center;
+}
+
+h5 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image {
+  height: 300px;
+}
+
+.card-title {
+  font-family: "Crete Round", serif;
+  color: #ff9966;
+  font-weight: 800;
+}
+
+.card-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.project-card {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.project-card .card-body:hover {
+  background-color: #dbd4b4;
+}
+
+.vertical-line {
+  border-right: 1px solid gray;
+  height: 380px;
+}
+
+.container {
+  background-color: gray;
+}
+
+.video-project-header {
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.team-alignment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-images {
+  height: 200px;
+  width: 350px;
+  border-radius: 15px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.team-images:hover {
+  transform: scale(1.09);
+}
+
+.life-background {
+  background-color: bisque;
+}
+
+.life-content {
+  display: flex;
+  justify-content: center;
+}
+
+.life-image {
+  height: 320px;
+  width: 600px;
+  margin-top: 10px;
+}
+
+.life-header {
+  padding: 20px;
+}
+
+.blog-type {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  color: black;
+}
+
+.blog-date {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.blog-content {
+  text-align: left;
+  font-weight: 500;
+}
+
+.blog-image {
+  height: 200px;
+  width: 200px;
+}

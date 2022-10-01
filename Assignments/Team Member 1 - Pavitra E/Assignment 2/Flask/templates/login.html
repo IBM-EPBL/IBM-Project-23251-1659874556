@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block head %}
+<title>Login Page</title>
+{% endblock %}{% block body %}
+
+<div class="login-box">
+  <h1>Login</h1>
+  <form>
+    <label>Email</label>
+    <input type="email" placeholder="" />
+    <label>Password</label>
+    <input type="password" placeholder="" />
+    <a href="/dashboard"><input type="button" value="Submit" /></a>
+  </form>
+</div>
+<div class="signup-link">
+  Not have an account?
+  <a class="link-colour" href="/signup">Sign Up Here</a>
+</div>
+
+{% endblock %}
