@@ -4,7 +4,7 @@ from ibm_botocore.client import Config, ClientError
 
 COS_ENDPOINT="https://s3.jp-tok.cloud-object-storage.appdomain.cloud"
 COS_API_KEY_ID="exEpsJTf7Py9jF0yW3P8f861fPRk8By5m0r4aZKd6q90"
-COS_INSTANCE_CRN="crn:v1:bluemix:public:cloud-object-storage:global:a/7ebc5fa6e5574249a096054c3ba601a2:a98969e1-30e6-443c-83db-02317e816b3f::"
+COS_INSTANCE_CRN="crn:v1:bluemix:public:cloud-object-storage:global:a/7ebc5fa6e5574249a096054c3ba601a2:a98969e1-30e6-443c-83db-02317e816b3f:bucket:nalaiyathiran"
 
 
 
