@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="col-md-6 offset-md-3">
+        <div class="huge">Add Product</div>        
+    </div>
+    <div class="col-md-6 offset-md-3 border pt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="POST" action="">
+                {{ form.hidden_tag() }} <!--CSRF TOKEN -->
+                    <fieldset class="form-group">
+                        <div class="form-group">
+                            {{ form.name.label(class="form-control-label") }}
+                            {{ form.name(class="form-control form-control-lg") }}
+                        </div>
+                    </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label class="form-control-label">Locations</label>
+            </div>
+            <div class="col-md-12" style="height:400px; overflow: auto;">
+                    <fieldset>
+                        {% for location in locations %}
+                            <div class="form-group">
+                                <label class="form-control-label">{{ location[0] }}</label>
+                                <input class="form-control form-control-lg" id="places[]" name="places[]" value="0">       
+                            </div>
+                        {% endfor %}
+                    </fieldset>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                    <fieldset>
+                        <div class="form-group">
+                            {{ form.submit(class="btn btn-success navbar-dark bg-dark") }}
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
