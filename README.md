@@ -40,7 +40,11 @@ Requirements
 Python Packages:
 
 •	WTForms
+
 •	SQLAlchemy
+
 •	MySQL
+
 •	Server(Localhost)
+
 •	MySQL Server
