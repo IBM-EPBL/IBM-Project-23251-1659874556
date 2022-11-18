@@ -1,0 +1,25 @@
+version: "3.1"
+
+services:
+  db:
+    image: mariadb:10.5
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./inventory_management.sql:/docker-entrypoint-initdb.d/inventory_management.sql"
+    environment:
+      MARIADB_RANDOM_ROOT_PASSWORD: yes
+      MARIADB_DATABASE: inventory_management
+      MARIADB_USER: admin
+      MARIADB_PASSWORD: password
+  
+  inventory-management:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MYSQL_DATABASE_USER: admin
+      MYSQL_DATABASE_PASSWORD: password
+      MYSQL_DATABASE_DB: inventory_management
+      MYSQL_DATABASE_HOST: db
+      SQLALCHEMY_DATABASE_URI: mysql+pymysql://admin:password@db/inventory_management

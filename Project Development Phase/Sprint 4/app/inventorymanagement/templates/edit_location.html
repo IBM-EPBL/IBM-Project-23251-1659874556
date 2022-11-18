@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="col-md-6 offset-md-3">
+        <div class="huge">Edit Location</div>        
+    </div>
+    <div class="col-md-6 offset-md-3 border pt-2">
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="POST" action="">
+                {{ form.hidden_tag() }} <!--CSRF TOKEN -->
+                    <fieldset class="form-group">
+                        <div class="form-group">
+                            <label class="form-control-label" for="name">Edit Location Name</label>
+                            <input class="form-control form-control-lg" id="name" name="name" required type="text" value="{{ location[1] }}">
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-success navbar-dark bg-dark" value="Edit Location">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

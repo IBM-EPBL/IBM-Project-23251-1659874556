@@ -1,0 +1,133 @@
+{% extends "layout.html" %} {% block content %}
+<div class="col-md-12">
+  <div class="row">
+    <div class="col-lg-3 col-md-6">
+      <a
+        href="{{ url_for('view_product') }}"
+        style="text-decoration: none; color: white"
+      >
+        <div class="border rounded navbar-dark bg-dark">
+          <div class="panel-heading">
+            <br />
+            <div class="row">
+              <div class="col-md-8 offset-md-3 text-right">
+                <div class="huge">{{ products }}</div>
+                <div
+                  style="font-family: Georgia, 'Times New Roman', Times, serif"
+                >
+                  Total Products
+                </div>
+                <div
+                  style="font-family: Georgia, 'Times New Roman', Times, serif"
+                >
+                  View Products
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <a
+        href="{{ url_for('view_location') }}"
+        style="text-decoration: none; color: white"
+      >
+        <div class="border rounded navbar-dark bg-dark">
+          <div class="panel-heading">
+            <br />
+            <div class="row">
+              <div class="col-md-8 offset-md-3 text-right">
+                <div class="huge">{{ locations }}</div>
+                <div
+                  style="font-family: Georgia, 'Times New Roman', Times, serif"
+                >
+                  Total Locations
+                </div>
+                <div
+                  style="font-family: Georgia, 'Times New Roman', Times, serif"
+                >
+                  View Locations
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <a href="#" style="text-decoration: none; color: white">
+        <div class="border rounded navbar-dark bg-dark">
+          <div class="panel-heading">
+            <br />
+            <div class="row">
+              <div class="col-md-8 offset-md-3 text-right">
+                <div class="huge">{{ sales }}</div>
+                <div
+                  style="font-family: Georgia, 'Times New Roman', Times, serif"
+                >
+                  Total Sales
+                </div>
+                <div
+                  style="font-family: Georgia, 'Times New Roman', Times, serif"
+                >
+                  View Sales
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <a
+        href="{{ url_for('view_productmovement') }}"
+        style="text-decoration: none; color: white"
+      >
+        <div class="border rounded navbar-dark bg-dark">
+          <div class="panel-heading">
+            <br />
+            <div class="row">
+              <div class="col-md-8 offset-md-3 text-right">
+                <div class="huge">{{ movements }}</div>
+                <div
+                  style="font-family: Georgia, 'Times New Roman', Times, serif"
+                >
+                  Total Movement
+                </div>
+                <div
+                  style="font-family: Georgia, 'Times New Roman', Times, serif"
+                >
+                  Product Movement
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "c95414b6-c463-400a-9f76-3b5d9673cfc7", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "1f10609a-c825-49bc-9830-588ea7ec5d8e", // The ID of your service instance.
+    onLoad: function (instance) {
+      instance.render();
+    },
+  };
+  setTimeout(function () {
+    const t = document.createElement("script");
+    t.src =
+      "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+      (window.watsonAssistantChatOptions.clientVersion || "latest") +
+      "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+{% endblock content %}
