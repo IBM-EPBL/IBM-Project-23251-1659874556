@@ -1,0 +1,63 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inventory-mgmt
+spec:
+  selector:
+    matchLabels:
+      app: inventory-mgmt
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: inventory-mgmt
+    spec:
+      containers:
+        - image: jp.icr.io/inventory1/inventory-management:0.0.5
+          imagePullPolicy: IfNotPresent
+          name: inventory-mgmt
+          env:
+            - name: MYSQL_DATABASE_HOST
+              value: "mysql"
+            - name: MYSQL_DATABASE_DB
+              value: "inventory_management"
+            - name: MYSQL_DATABASE_USER
+              value: "admin"
+            - name: MYSQL_DATABASE_PASSWORD
+              value: "password"
+            - name: SQLALCHEMY_DATABASE_URI
+              value: mysql+pymysql://admin:password@mysql/inventory_management
+          ports:
+            - containerPort: 8000
+              name: http
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app
+spec:
+  ports:
+    - port: 8000
+  selector:
+    app: inventory-mgmt
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-np
+spec:
+  ports:
+    - port: 8000
+  selector:
+    app: inventory-mgmt
+  type: NodePort
