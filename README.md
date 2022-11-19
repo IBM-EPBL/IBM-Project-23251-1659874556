@@ -11,7 +11,7 @@
       • Tanusha N
                
       • Vandhanna R
-
+---
                
 **Dashboard**
 
@@ -31,6 +31,7 @@
 
         This page lets users enter details of product movements Product Id, Name, From Location, To Location, 
         Quantity, Date, Revert.
+---
 
 **Languages Used:**
 
@@ -68,9 +69,11 @@
         
        •    Flask
        
-       
+---
+
 ***Website Link : http://169.51.203.191:31392/***
 
+---
 
 ![5](https://user-images.githubusercontent.com/113250494/202847348-6a7053dd-4aee-400e-b82b-c47b795a0120.png)
 
