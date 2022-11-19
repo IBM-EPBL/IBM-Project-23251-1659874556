@@ -7,46 +7,55 @@ Tech Stack
 
 Dashboard
 
-This page contains information based on data. In the upper section, four cards contain the total number of products, total locations, total sales and the number of product movements.
+        This page contains information based on data. In the upper section, four cards contain the total number of products, total locations, total sales and the number of product movements.
 
 Products
 
-On this page, users can add new products. It contains fields like Product ID, Name, Quantity, View Quantities, Edit, Move.
+        On this page, users can add new products. It contains fields like Product ID, Name, Quantity, View Quantities, Edit, Move.
 
 Locations
 
-On this page, users can add new order entries. It contains fields location ID, location Name, Edit.
+        On this page, users can add new order entries. It contains fields location ID, location Name, Edit.
 
 Product movements
 
-This page lets users enter details of product movements Product Id, Name, From Location, To Location, Quantity, Date, Revert.
+        This page lets users enter details of product movements Product Id, Name, From Location, To Location, Quantity, Date, Revert.
 
 Languages Used:
 
-•	Python
+      •	Python
 
-•	JQuery
+      •	JQuery
 
-•	HTML
+      •	HTML
 
 Databases Used:
 
-•	SQLAlchemy (for Managing Users)
+      •	MariaDB
 
-•	MySQL (for Managing Products)
+      •	MySQL 
 
-Requirements
+Software Requirements:
+
+      • Flask
+      
+      • Docker
+      
+      • Kubernetes
 
 Python Packages:
 
-•	WTForms
+      •	WTForms
 
-•	SQLAlchemy
+      •	MySQL
 
-•	MySQL
+      •	Server(Localhost)
 
-•	Server(Localhost)
-
-•	MySQL Server
+      •	MySQL Server
+      
+      • PyMySQL
+      
+      • Flask
 
 Website Link : http://169.51.203.191:31392/
+
