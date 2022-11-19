@@ -15,8 +15,8 @@
                
 **Dashboard**
 
-        This page contains information based on data. In the upper section, four cards contain the total number
-        of products, total locations, total sales and the number of product movements.
+        This page contains information based on data. In the upper section, four cards contain the total 
+        number of products, total locations, total sales and the number of product movements.
 
 **Products**
 
